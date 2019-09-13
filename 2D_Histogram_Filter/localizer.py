@@ -15,7 +15,7 @@ def initialize_beliefs(grid):
     return beliefs
 
 def sense(color, grid, beliefs, p_hit, p_miss):
-    new_beliefs = [][]
+    new_beliefs = beliefs
 
     #
     # TODO - implement this in part 2
