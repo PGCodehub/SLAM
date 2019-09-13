@@ -27,8 +27,13 @@ def sense(color, grid, beliefs, p_hit, p_miss):
 
             new_beliefs[i][j] = cell*(p_hit * hit + (1- hit) * p_miss)
 
+    s = 0
+    for i, row in enumerate(new_beliefs):
 
-    s = sum(sum(x) for x in new_beliefs))
+        for j, cell in enumerate(row):
+
+            s += cell
+
 
     for i, row in enumerate(new_beliefs):
         for j, cell in enumerate(row):
