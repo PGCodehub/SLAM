@@ -19,7 +19,22 @@ def sense(color, grid, beliefs, p_hit, p_miss):
 
     #
     # TODO - implement this in part 2
-    #
+    height = len(beliefs)
+    width = len(beliefs[0])
+    for i, row in enumerate(beliefs):
+        for j, cell in enumerate(row):
+            hit = (color == grid[i][j])
+
+            new_beliefs[i][j] = cell*(p_hit * hit + (1- hit) * p_miss)
+
+
+    s = sum(beliefs)
+
+    for i, row in enumerate(new_beliefs):
+        for j, cell in enumerate(row):
+
+            new_beliefs[i][j] = cell  / s
+
 
     return new_beliefs
 
