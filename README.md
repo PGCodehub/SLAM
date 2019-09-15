@@ -8,6 +8,8 @@ This is an active area of research in the field of robotics and autonomous syste
 
 Below is an example of a 2D robot world with landmarks (purple x's) and the robot (a red 'o') located and found using only sensor and motion data collected by that robot.
 
+![2D World](https://github.com/PGCodehub/SLAM/blob/master/images/description.PNG)
+
 
 
 Files
@@ -31,9 +33,12 @@ Implementation
 After correctly implementing SLAM, we can visualize
 
 Omega :
+![omega](https://github.com/PGCodehub/SLAM/blob/master/images/implement_omega.PNG)
+
 
 
 Xi :
+![xi](https://github.com/PGCodehub/SLAM/blob/master/images/implement_xi.PNG)
 
 
 Solution
@@ -41,14 +46,6 @@ To "solve" for all these x values, we can use linear algebra; all the values of 
 
 
 
-The result can be displayed as well :
-
-
-
-Notice that our initial position is [x = world_size / 2, y = world_size / 2] since we assume with absolute confidence that our robot starts out in the middle of the defined world.
-
-Visualization of the constructed world
-Finally, we can visualize the code implemented : the final position of the robot and the position of landmarks, created from only motion and measurement data !
 
 
  
