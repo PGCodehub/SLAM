@@ -38,6 +38,7 @@ Omega :
 
 
 Xi :
+
 ![xi](https://github.com/PGCodehub/SLAM/blob/master/images/implement_xi.PNG)
 
 
